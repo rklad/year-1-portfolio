@@ -1,0 +1,307 @@
+body{
+  background-color:#96C9DC;
+}
+/* #96C9DC possible background color */
+
+nav{
+  background-color: #1A659E;
+}
+a{
+  color: white !important;
+  text-align:center;
+  font-size:2rem;
+  font-family: 'Rowdies', cursive;
+  
+}
+
+div.width {
+  width:250%;
+}
+
+a.width {
+  width:10rem;
+}
+
+a.navhead {
+  font-size:2.5rem;
+  font-family: 'Rowdies', cursive;
+}
+
+.navbar-toggler-icon{
+  background-image: url("icons8-menu-rounded-60.png");
+}
+
+body {
+   /* RESET */
+   margin: 0;
+  
+   
+   
+   font-family: 'Raleway', sans-serif;
+   line-height: 26px;
+}
+
+
+
+p { text-align: center; }
+.link {
+   /* RESET */
+   text-decoration: none;
+   
+   
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #64b3f4 0%, #42F2F7 100%);
+   transition: transform .25s ease-out;
+}
+
+.link:hover { 
+   color: #fff; 
+}
+.link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
+
+
+
+div.christmas {
+  align-items: center;
+  background-image:url("IMG_0599.jpg");
+  border:10px solid black;
+  width:100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  border-radius:100px 100px 100px 100px;
+  aspect-ratio:12 / 10; 
+  background-position-y:bottom;
+}
+
+div.about {
+  font-size:5rem;
+  font-family: 'Rowdies', cursive;
+  color:white;
+  
+}
+div.project {
+  font-size:5rem;
+  font-family: 'Rowdies', cursive;
+  color:white;
+}
+
+h1.paragraph {
+  font-family: 'Rowdies', cursive;
+  font-size:2rem;
+  color:white;
+}
+
+/* landing page hello text */ 
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+  color:white;
+    font-family: "asphalt", sans-serif;
+font-weight: 800;
+font-style: normal;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+img.tape {
+  background-size:cover;
+  width:100%;
+  height:100%;
+}
+
+img.rk {
+  width:14rem;
+  height:7rem;
+}
+
+
+/*projects showcase */ 
+
+/* ------------ Document Styling End ------- */
+
+.card-container {
+display: flex;
+justify-content: center;	
+margin-top: 150px;
+}
+
+.card {
+height: 200px;
+width:100%;
+display: inline-flex;
+justify-content: center;
+text-decoration: none;
+}
+
+.card-top {
+border-radius: 8px;
+width:100%;
+background: black;
+height: 200px;
+position: absolute;
+z-index: 8;
+transition: transform .5s;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card1 {
+background: url('tribute.png');	
+background-size: cover;
+border: 3px solid black;
+}
+
+.card:hover .card-top {
+transform: translateY(-120px);
+}
+
+.card-bottom {
+background: white;
+height: 200px;
+border-radius: 8px;
+  border: 3px solid black;
+}
+
+.card-contents {
+color: black;
+padding: 90px 20px 0px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.card-contents p{
+margin: 7px 0px;
+}
+
+.card-title {
+font-weight: bold;
+font-size: 1.3em;
+}
+
+div.tribute {
+  top:25%;
+  left:15%;
+}
+
+div.thanksgiving {
+  top:25%;
+  left:55%;
+}
+
+.card2 {
+background: url('thanksgiving.png');	
+background-size: cover;
+border: 3px solid black;
+}
+
+div.pumpkinpie {
+  top:55%;
+  left:15%;
+}
+
+.card3 {
+background: url('pumpkinpie.png');	
+background-size: cover;
+border: 3px solid black;
+}
+
+div.elements {
+
+  top:55%;
+  left:55%;
+}
+
+.card4 {
+background: url('elements.png');	
+background-size: cover;
+border: 3px solid black;
+}
+
+div.seacreatures {
+
+  top:85%;
+  left:15%;
+}
+
+.card5 {
+background: url('seacreatures.png');	
+background-size: cover;
+border: 3px solid black;
+}
+
+div.market {
+  
+  top:85%;
+  left:55%;
+}
+
+.card6 {
+background: url('farmer.png');	
+background-size: cover;
+border: 3px solid black;
+}
+
+
+@media only screen and (max-width:1020px) {
+  div.project {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width:838px) {
+  div.project {
+    font-size: 3.2rem;
+  }
+}
+
+
+
+@media only screen and (max-width:692px) {
+  div.project {
+    font-size: 2.7rem;
+  }
+}
+
+@media only screen and (max-width:597px) {
+  div.project {
+    font-size: 2.5rem;
+  }
+}
+
